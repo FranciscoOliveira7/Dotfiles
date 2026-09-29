@@ -6,6 +6,7 @@ configuration {
 }
 
 * {
+    highlight: bold;
     foreground:  #ACB0D0;
     selected: #ACB0D0;
     background: #121214;

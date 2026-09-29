@@ -1,0 +1,30 @@
+theme = "catppuccin_mocha"
+
+[keys.normal]
+G = "goto_file_end"
+H = "goto_previous_buffer"
+L = "goto_next_buffer"
+# e = "move_next_sub_word_end"
+# w = "move_next_sub_word_start"
+# b = "move_prev_sub_word_end"
+# "space" = { b = { d = ":buffer-close" } }
+# "space" = { b = { b = "buffer_picker" } }
+
+[keys.select]
+G = "goto_file_end"
+
+[keys.normal."space".b]
+b = "buffer_picker"
+d = ":buffer-close"
+
+
+[editor]
+# Tabs on the top
+mouse = false
+bufferline = "multiple"
+rulers = [80]
+end-of-line-diagnostics = "hint"
+# indent-guides.render = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
